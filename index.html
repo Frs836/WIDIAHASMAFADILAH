@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Load Tailwind CSS CDN untuk styling modern dan responsif -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Konfigurasi Font (Menggunakan Inter sebagai standar modern) -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6; /* Latar belakang abu-abu muda */
+            padding: 2rem;
+        }
+
+        /* Custom CSS untuk Animasi Tombol Keren (Hover Effect) */
+        .animated-button {
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .animated-button:hover {
+            transform: scale(1.05) translateY(-2px); /* Sedikit membesar dan naik */
+            box-shadow: 0 10px 15px -3px rgba(79, 70, 229, 0.5), 
+                        0 4px 6px -2px rgba(79, 70, 229, 0.2); /* Shadow berwarna ungu */
+        }
+    </style>
+    <title>Manfaat Internet di Pendidikan - Tugas 6</title>
+</head>
+<body class="min-h-screen flex items-center justify-center">
+
+    <!-- Kontainer Utama (Card) -->
+    <div class="bg-white p-8 md:p-12 rounded-2xl shadow-2xl max-w-4xl w-full border-t-8 border-indigo-600">
+        
+        <!-- Bagian 1: Judul dan Deskripsi Diri Singkat -->
+        <header class="mb-10 pb-6 border-b border-gray-200">
+            <h1 class="text-3xl md:text-4xl font-extrabold text-gray-900 mb-2">
+                Manfaat Internet di Bidang Pendidikan
+            </h1>
+            <p class="text-lg text-indigo-600 font-medium">Tugas Individu Pertemuan 6 - Pengembangan Web Dasar</p>
+        </header>
+
+        <main class="space-y-10">
+
+            <!-- Blok Data Diri dan Profil Placeholder -->
+            <section class="flex flex-col md:flex-row items-center gap-8 bg-indigo-50 p-6 rounded-xl">
+                <!-- Placeholder Foto Profil -->
+                <img 
+                    src="foto buna.jpeg" 
+                    alt="Placeholder Foto Profil" 
+                    class="w-32 h-32 rounded-full object-cover ring-4 ring-indigo-300 shadow-md flex-shrink-0"
+                >
+                
+                <!-- Data Diri -->
+                <div class="text-gray-700">
+                    <h2 class="text-2xl font-bold mb-1 text-indigo-800">WIDIAH ASMA FADILAH</h2>
+                    <p><strong>NIM:</strong>64351507</p>
+                    <p><strong>Jurusan:</strong> MANAJEMEN</p>
+                    <p class="mt-4 italic">"Mempelajari fondasi web untuk masa depan digital."</p>
+                </div>
+            </section>
+
+            <!-- Bagian 2: Penjelasan Manfaat Internet -->
+            <section>
+                <h2 class="text-3xl font-semibold text-gray-800 mb-4 border-b pb-2">
+                    Kontribusi Digital dalam Belajar
+                </h2>
+                <p class="text-gray-600 leading-relaxed text-lg">
+                    Internet telah merevolusi sektor pendidikan, mengubah cara mahasiswa, dosen, dan peneliti berinteraksi dengan ilmu pengetahuan. Ini bukan hanya tentang mengakses informasi, tetapi tentang menciptakan lingkungan belajar yang adaptif dan tanpa batas.
+                    <br><br>
+                    Secara spesifik, Internet membantu proses <strong>pembelajaran jarak jauh (e-learning)</strong>, memungkinkan akses tak terbatas ke <strong>jurnal, buku, dan materi ilmiah</strong> dari seluruh dunia, serta memfasilitasi <strong>kolaborasi online</strong> yang efisien antar mahasiswa dan institusi global.
+                </p>
+            </section>
+            
+            <!-- Bagian 3: Ilustrasi Relevan (Placeholder Gambar) -->
+            <section class="text-center">
+                <h3 class="text-xl font-medium text-gray-700 mb-4">
+                    Ilustrasi Belajar di Era Digital
+                </h3>
+                <!-- Placeholder Gambar Ilustrasi -->
+                <img 
+                    src="https://placehold.co/600x350/10B981/ffffff?text=Ilustrasi+Akses+Informasi+Global" 
+                    alt="Ilustrasi Internet di Pendidikan" 
+                    class="w-full h-auto rounded-xl shadow-lg border border-gray-300 mx-auto transition-transform duration-300 hover:scale-[1.01]"
+                >
+                <p class="mt-2 text-sm text-gray-500">
+                    *Gambar ini melambangkan koneksi global dan akses pengetahuan yang difasilitasi oleh Internet.
+                </p>
+            </section>
+
+            <!-- Bagian 4: Link (Hyperlink) dengan Tombol Animasi Keren -->
+            <section class="mt-10 pt-6 border-t border-gray-200 text-center">
+                <p class="text-xl font-semibold text-gray-800 mb-6">
+                    Mulai Eksplorasi Sumber Belajar Online Anda!
+                </p>
+                <!-- Tombol Animasi Keren -->
+                <a 
+                    href="https://bsi.ac.id" 
+                    target="_blank" 
+                    class="animated-button inline-flex items-center justify-center px-8 py-3 text-lg font-bold text-white bg-indigo-600 rounded-full hover:bg-indigo-700 focus:outline-none focus:ring-4 focus:ring-indigo-300 tracking-wider uppercase"
+                    rel="noopener noreferrer"
+                >
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg>
+                    Kunjungi Situs Pendidikan
+                </a>
+                <p class="mt-4 text-sm text-gray-500">
+                    (Link contoh diarahkan ke BSI, buka di tab baru)
+                </p>
+            </section>
+
+        </main>
+    </div>
+</body>
+</html>
